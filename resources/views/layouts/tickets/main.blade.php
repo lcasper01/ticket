@@ -24,7 +24,7 @@
                     <td>{{ $ticket->title }}</td>
                     <td>{{$ticket->body}}
                         @isset($ticket->file_name)
-                            <a href="{{asset('/storage/'. $ticket->file_name)}}">файл</a>
+                            <a download href="{{('/storage/'. $ticket->file_name)}}"> файл</a>
                         @endisset
                     </td>
                     <td>{{$ticket->responsible_user}}</td>
